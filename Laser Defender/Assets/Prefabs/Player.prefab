@@ -106,6 +106,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+<<<<<<< HEAD
+>>>>>>> parent of 15014f9 (update score and lives)
+=======
 >>>>>>> parent of 15014f9 (update score and lives)
 --- !u!114 &872841194217656378
 MonoBehaviour:
