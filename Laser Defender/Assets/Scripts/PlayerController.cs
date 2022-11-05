@@ -11,13 +11,15 @@ public class PlayerController : MonoBehaviour
     Vector2 maxBounds;
     Vector2 size;
     RectTransform rt;
+    Shooter shooter;
+    private void Awake()
+    {
+        shooter = GetComponent<Shooter>();
+    }
     private void Start()
     {
         InitBounds();
-        //var p1 = transform.TransformPoint(0, 0, 0);
-        //var p2 = transform.TransformPoint(1, 1, 0);
-        //size = p2 - p1;
-        size = GetComponent<SpriteRenderer>().bounds.size / 2;
+        size = GetComponentInChildren<SpriteRenderer>().bounds.size / 2;
     }
     private void Update()
     {
@@ -43,5 +45,9 @@ public class PlayerController : MonoBehaviour
     void OnMove(InputValue inputValue)
     {
         moveInput = inputValue.Get<Vector2>();
+    }
+    void OnFire(InputValue inputValue)
+    {
+        if(shooter) shooter.isFiring = inputValue.isPressed;
     }
 }
