@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5968604725876274153}
   - component: {fileID: 2294111043652062540}
   - component: {fileID: 4454576566114671514}
-  - component: {fileID: -2940144934471429251}
   - component: {fileID: 872841194217656378}
+  - component: {fileID: -2940144934471429251}
   - component: {fileID: 5585839955302228940}
   - component: {fileID: -4271837783143419602}
   m_Layer: 6
@@ -91,6 +91,8 @@ PolygonCollider2D:
       - {x: -0.3793422, y: -0.34783694}
       - {x: 0.38194793, y: -0.34523132}
       - {x: 0.565437, y: -0.050547004}
+<<<<<<< HEAD
+=======
 --- !u!114 &-2940144934471429251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,11 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 048a69840df5cb741bb1fd803d28d930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 1
   health: 50
-  score: 0
-  hitEffect: {fileID: 7783979640130440240, guid: b6f7820796330fb498af1c93718d0ee8, type: 3}
-  applyCameraShake: 1
+>>>>>>> parent of 15014f9 (update score and lives)
 --- !u!114 &872841194217656378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +137,23 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &-2940144934471429251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2363760544665018989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 048a69840df5cb741bb1fd803d28d930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer: 1
+  health: 50
+  score: 0
+  hitEffect: {fileID: 7783979640130440240, guid: b6f7820796330fb498af1c93718d0ee8, type: 3}
+  applyCameraShake: 1
 --- !u!114 &5585839955302228940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,9 +182,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 4060003091104791815, guid: bc77ba908ffe91e46ae951777c6e6e47, type: 3}
   projectileSpeed: 10
   projectileLifeTime: 5
-  baseFiringRate: 0.2
-  firingRateVariance: 0
-  minimumFiringRate: 0
+  firingRate: 0.2
   useAI: 0
   isFiring: 0
 --- !u!1 &4939368252481159031
